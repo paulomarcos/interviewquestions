@@ -1,0 +1,48 @@
+q1:
+  question: Tell me about yourself.
+  example: I'm an experienced software engineer who constantly seeks out innovative solutions to everyday problems. In my seven years in this industry, I've honed my analytical thinking and collaboration skills, and I love working with a team. I've also had the opportunity to serve as the software engineer lead for three projects with First Technology.
+  explanation: Focus on the job in question. Think about what makes you unique. Start with an overview. Mention prior creer highlights. Provide examples to illustrate. Conclude with your future goals. 
+q2:
+  question: What is something you are proud of?
+  example: Last year I received a commendation from my boss because I had solved a bug that was inside the system for over three months, and with that I saved the company 10% of monthly server costs.
+  explanation: Pick one or two of your biggest achievements in your work, provide some context, the tasks and results and fill in with some data to back you up.
+q3: 
+  question: What is your biggest weakness?
+  example: I carefully read your job posting and unfortunately I feel that my biggest weakness is my lack of experience using XX secondary language. I believe with all my other skills I will be still valuable to your company and I am sure I will be able to pick up on that language in no time due to my experience with CC and DD languages.
+  explanation: Avoid using personal, non-work related weaknesses since they are not relevant to the job. Rather, focus on one of the secondary requirements on the job posting and provide some context that will support you learning and developing that as a new skill. This will show that you are honest and willing to work hard to overcome any issues.
+q4: 
+  question: What is your biggest achievement?
+  example: Add example here.
+  explanation: Add explanation here.
+q5: 
+  question: Tell me about a time when you failed.
+  example: Add example here.
+  explanation: Add explanation here.
+q6: 
+  question: Tell me about a time when you overcame an issue.
+  example: Add example here.
+  explanation: Add explanation here.
+q7: 
+  question: Tell me when you successfully completed a project.
+  example: Add example here.
+  explanation: Add explanation here.
+q8: 
+  question: What are you looking for in this job?
+  example: Add example here.
+  explanation: Add explanation here.
+q9: 
+  question: Why should we hire you?
+  example: Add example here.
+  explanation: Add explanation here.
+q10: 
+  question: Talk about some mistakes you learned from.
+  example: Add example here.
+  explanation: Add explanation here.
+q11: 
+  question: Do you enjoy working with a team or alone?
+  example: Add example here.
+  explanation: Add explanation here.
+q12: 
+  question: How do you keep your skills sharp and up to date?
+  example: Add example here.
+  explanation: Add explanation here.

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interview Questions</title>
+    <style type="text/css">
+                            * {
+                      box-sizing: border-box;
+                    }
+                    html,
+                    body {
+                      min-height: 100vh;
+                      margin: 0;
+                      padding: 0;
+                    }
+                    body {
+                      font-family: Helvetica, Arial, sans-serif;
+                      color: #0d122b;
+                      display: flex;
+                      flex-direction: column;
+                      padding-left: 1em;
+                      padding-right: 1em;
+                    }
+                    h1, p {
+                      text-align: center;
+                      font-weight: 100;
+                    }
+                    header {
+                      border-bottom: 1px solid #dadada;
+                      margin-bottom: 2em;
+                    }
+                    main {
+                      flex-grow: 2;
+                      display: block;
+                      justify-content: space-evenly;
+                      align-items: center;
+                      background-color: #fff;
+                      border-radius: 12px;
+                      margin-bottom: 2px;
+                    }
+                    @keyframes bg-pulse {
+                      0% {
+                        background-color: #fff;
+                      }
+
+                      50% {
+                        background-color: #c7ecee;
+                      }
+
+                      100% {
+                        backgrouond-color: #fff;
+                      }
+                    }
+                    main.speaking {
+                      animation: bg-pulse 1.5s alternate ease-in-out infinite;
+                    }
+                    .input {
+                      text-align: center;
+                      width: 100%;
+                    }
+                    label {
+                      display: block;
+                      font-size: 18px;
+                      margin-bottom: 1em;
+                    }
+                    .field {
+                      margin-bottom: 2em;
+                    }
+                    select {
+                      width: 75%;
+                      font-size: 24px;
+                      padding: 0.5em;
+                      border: 1px solid rgba(13, 18, 43, 0.25);
+                      border-radius: 6px;
+                      transition: border-color 0.25s;
+                    }
+                    button {
+                      background: #3bb463;
+                      border-radius: 999px;
+                      box-shadow: #5df0dc 0 10px 20px -10px;
+                      box-sizing: border-box;
+                      color: #FFFFFF;
+                      cursor: pointer;
+                      font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+                      font-size: 16px;
+                      font-weight: 700;
+                      line-height: 24px;
+                      opacity: 1;
+                      outline: 0 solid transparent;
+                      padding: 8px 18px;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                      width: fit-content;
+                      word-break: break-word;
+                      border: 0;
+                    }
+                    button:hover,
+                    button:focus {
+                      background: #2bdaae;
+                      color: #fff;
+                    }
+                    input {
+                      background: #5E5DF0;
+                      border-radius: 999px;
+                      box-shadow: #5E5DF0 0 10px 20px -10px;
+                      box-sizing: border-box;
+                      color: #FFFFFF;
+                      cursor: pointer;
+                      font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+                      font-size: 16px;
+                      font-weight: 700;
+                      line-height: 24px;
+                      opacity: 1;
+                      outline: 0 solid transparent;
+                      padding: 8px 18px;
+                      user-select: none;
+                      -webkit-user-select: none;
+                      touch-action: manipulation;
+                      width: fit-content;
+                      word-break: break-word;
+                      border: 0;
+                    }
+                    input:hover,
+                    input:focus {
+                      background: #7003ca;
+                      color: #fff;
+                    }
+                    textarea.answer {
+                      background-color: #e9e9e9;
+                      border-radius: 5px;
+                      width: 500px;
+                      min-height: 60px;
+                      max-height:100px;
+                      resize: none;
+                      border-color:rgb(189, 190, 202);
+                      font-family: Inter,Helvetica,"Apple Color Emoji";
+                      font-size: 11pt;
+                    }
+
+                    a {
+                      color: #0d122b;
+                    }
+                    .error {
+                      color: #f22f46;
+                      text-align: center;
+                    }
+                    footer {
+                      border-top: 1px solid #dadada;
+                      text-align: center;
+                    }
+                    .submitbuttons {
+                      text-align: center;
+                      margin-top: 50px;
+                    }
+                    .youranswer{
+                      margin-top: 50px;
+                      padding-bottom: 25px;
+                    }
+                    
+    </style>
+  </head>
+      <body>
+
+          <header>
+              <h1>Interview Questions</h1>
+          </header>
+
+        <main>
+
+
+          <div id="question">
+            <p><b>{{ question }}</b></p>
+            <p>{{ explanation }} </p>
+            <p>{{ example }} </p>
+          </div>
+          
+          <div class="submitbuttons">
+            <form method="post">
+              <input type="submit" name="askquestion" value="New Question">
+              <input type="submit" name="askquestion" value="Explanation">
+              <input type="submit" name="askquestion" value="Example">
+            </form>
+         </div>
+
+         {% include 'answer.html' %}
+
+        </main>
+
+        
+
+        <footer>
+            <p> <br>
+                Built by <a href='https://paulomarcos.github.io'>Paulo Dores</a>
+            </p>
+        </footer>
+
+      </body>
+</html>
