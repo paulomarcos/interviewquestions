@@ -1,9 +1,11 @@
 <div class="youranswer">
-    <form class="input" id="voice-form" name="save" method="post" action="/store-answer">
+    <form class="input" id="voice-form" name="save" method="post">
       <div class="field">
           <label for="speech">Your Answer</label>
-            <textarea class="answer" form="voice-form" name="save" value="save" required>{{answer}}</textarea>
+            <textarea class="answer" form="voice-form" name="save" value="save">{{answer}}</textarea>
       </div>
-      <button>Save Answer</button>
+      <input type="submit" name="savebutton" value="Save" class="savebutton">
+      <input type="submit" name="savebutton" value="Show Answer">
+      <input type="submit" name="savebutton" value="Hide Answer">
     </form>
 </div>
