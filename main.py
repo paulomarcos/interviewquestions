@@ -34,6 +34,8 @@ class Questions():
         self.current_example = "No example found. Click on New Question to retrieve a new question."
     
     def update_random_question(self):
+        if len(self.question_numbers) <= 0:
+            self.question_numbers = [k for k in self.questions]
         question = random.choice(self.question_numbers)
         self.current_question_number = question
         self.current_question = self.questions[question]['question']
